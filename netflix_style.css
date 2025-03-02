@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins", sans-serif ;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(netflix\ assets/images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1600px,100vw);
+    height: 95vh;
+    position: relative;
+}
+.main .box{
+    opacity: 0.6;
+    width: 100%;    
+    height: 95vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    height: 90px;
+}
+nav img{
+    position: relative;
+    z-index: 1;
+}
+nav button{
+    position: relative;
+    z-index: 1;
+}
+.hero{
+    height: calc(100% - 90px);
+    font-family:"Nunito Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    position: relative;
+    gap:20px;
+    
+}
+.hero > :nth-child(1){
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1000;
+}
+.hero > :nth-child(2){
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+.hero > :nth-child(3){
+    color: white;
+    position: relative;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+.line{
+    background-color: rgb(36, 36, 36);
+    height: 8px;
+}
+.btn{
+    padding: 5px 14px 7px 14px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid rgba(159, 159, 159, 0.5);
+    font-size: 15px;
+}
+.btn-red{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    background-color: #e50914;
+    border-radius: 5px;
+    border: none;
+}
+.btn-red-sm{
+    padding: 8px 14px;
+    font-size: 15px;
+    background-color:#e50914;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    margin-left: 10px;
+}
+input[type="email"] {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgba(17, 17, 17, 0.7);
+    border: 1px solid rgba(159, 159, 159, 0.5);
+    padding: 16px 200px 16px 12px;
+    border-radius: 4px;
+}
+.hero_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.first{
+    font-family:"Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    width: 80vw;
+    margin: auto;
+    padding: 90px 0px;
+}
+.secimg{    
+    position: relative;
+}
+.secimg img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.secimg video{
+    position: absolute;
+    top: 75px;
+    width: 481px;
+    left: 72px;
+}
+.first .info h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.first .info p{
+    font-size: 25px;
+    padding-top: 15px;
+    
+}
+.special video{
+    top: 31px;
+    left: 94px;
+    width: 357px;
+
+}
+.fnq{
+    color: white;
+    font-family:"Poppins", sans-serif ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.fnq h1{
+    max-width: 50vw;
+    padding: 75px 20px 20px 20px;
+    font-size: 45px;
+    font-weight: 800;
+}
+.fnq_box:hover{
+    background-color: #414141;
+}
+.fnq_box{
+    transition:  background-color ease-in-out 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 72vw;
+    font-size: 25px;
+    padding: 20px;
+    background-color: #2d2d2d;
+
+}
+.lq{
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+footer{
+    color: #b3b3b3;
+    padding: 60px 0px;
+}
+footer > div{
+    width: 80vw;
+    margin: auto;
+}
+
+.footer{
+    padding-top: 10px;
+    font-size: 14px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+}
+.footer ol li{
+    list-style: none;
+    padding: 8px;
+}
+.footer a{
+   
+    color:#b3b3b3;
+}
+#eng:focus{
+    border: 1px solid white;
+}
+
+@media screen and (max-width:1400px){
+    .hero_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    nav{
+        max-width: 90vw;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+    }
+    .secimg img{
+        width: 410px;
+        position: relative;
+        z-index: 10;
+    }
+    .secimg video{
+        position: absolute;
+        top: 65px;
+        width: 297px;
+        left: 56px;
+    }
+    .special video{
+        top: 25px;
+        left: 83px;
+        width: 250px;
+    
+    }
+    .footer{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80vw;
+        margin: auto;
+    }
+}
